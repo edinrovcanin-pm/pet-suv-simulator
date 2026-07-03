@@ -102,7 +102,6 @@ export default function Home() {
       const first = await getStudy(list[0].id);
       if (first) loadStudy(first);
     })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function handleFiles(files: FileList | null) {
